@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Gowri Devi - Python Full Stack Developer portfolio. Python, Django, SQL, Web Development and Projects.">
-  <meta name="keywords" content="Gowri Devi, Python Developer, Full Stack Developer, Python, Django, SQL, HTML, CSS, JavaScript, Bootstrap, Git, GitHub">
-  <meta name="author" content="Gowri Devi">
+  <title>Gowri Devi | Python Developer</title>
 
-  <title>Gowri Devi | Python Full Stack Developer</title>
+  <meta name="description"
+        content="Gowri Devi's portfolio - Python Developer, Web Development and AI enthusiast.">
 
   <style>
     * {
@@ -21,319 +20,228 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f7f8fc;
-      color: #172033;
+      background: #f5f8ff;
+      color: #202b3c;
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    /* NAVBAR */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #10182b;
+    header {
+      background: #101d38;
+      color: white;
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 18px 6%;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
-    .logo {
-      color: #a78bfa;
-      font-size: 22px;
-      font-weight: bold;
+    header h2 {
+      color: #62d6ff;
     }
 
-    nav ul {
-      list-style: none;
+    nav {
       display: flex;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 18px;
     }
 
-    nav ul li a {
+    nav a {
       color: white;
-      font-size: 14px;
-      transition: 0.3s;
+      text-decoration: none;
+      font-size: 15px;
     }
 
-    nav ul li a:hover {
-      color: #a78bfa;
+    nav a:hover {
+      color: #62d6ff;
     }
 
-    /* HERO */
     .hero {
-      min-height: 90vh;
+      min-height: 80vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      text-align: center;
-      padding: 70px 20px;
-      color: white;
-      background: linear-gradient(135deg, #0f172a, #4c1d95, #6d28d9);
+      justify-content: center;
+      gap: 55px;
+      padding: 60px 8%;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #eaf4ff, #ffffff);
     }
 
     .hero-content {
-      max-width: 900px;
+      flex: 1;
+      min-width: 270px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      color: #14264b;
+      margin: 12px 0;
+    }
+
+    .hero-content h2 {
+      color: #087bb5;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .hero-content p {
+      max-width: 600px;
+      margin-bottom: 25px;
+      color: #46546a;
     }
 
     .profile-img {
-      width: 190px;
-      height: 190px;
+      width: 290px;
+      height: 290px;
+      max-width: 80vw;
       object-fit: cover;
+      object-position: center;
       border-radius: 50%;
-      border: 6px solid #c4b5fd;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
-      margin-bottom: 20px;
+      border: 6px solid white;
+      box-shadow: 0 8px 30px #b5c8e5;
     }
 
-    .hero h1 {
-      font-size: 55px;
-      margin: 10px 0;
-    }
-
-    .hero h2 {
-      color: #ddd6fe;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      max-width: 760px;
-      margin: 15px auto;
-      color: #e5e7eb;
-      font-size: 17px;
-    }
-
-    .btn {
+    .button {
       display: inline-block;
-      padding: 12px 22px;
-      margin: 10px 5px;
-      border-radius: 25px;
+      background: #087bb5;
+      color: white;
+      padding: 12px 23px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px 8px 5px 0;
       font-weight: bold;
-      transition: 0.3s;
     }
 
-    .primary {
-      background: #7c3aed;
-      color: white;
+    .button:hover {
+      background: #075b89;
     }
 
-    .secondary {
-      border: 2px solid white;
-      color: white;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      opacity: 0.9;
-    }
-
-    /* GENERAL SECTIONS */
     section {
-      max-width: 1150px;
-      margin: auto;
-      padding: 80px 6%;
+      padding: 65px 8%;
     }
 
-    .title {
+    section h2 {
       text-align: center;
-      font-size: 38px;
-      margin-bottom: 15px;
-      color: #172033;
+      font-size: 30px;
+      color: #14264b;
+      margin-bottom: 30px;
     }
 
-    .subtitle {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 40px;
-      color: #64748b;
-    }
-
-    /* ABOUT */
-    .about {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .about-img {
-      width: 240px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 6px solid #8b5cf6;
-      display: block;
+    .section-content {
+      max-width: 1000px;
       margin: auto;
     }
 
-    /* CARDS */
-    .cards {
+    .about-text {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px #dce5f2;
+    }
+
+    .skills {
+      background: #edf4ff;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #d4e4fa;
+      color: #075b89;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-      transition: 0.3s;
-      border: 1px solid #eee;
-    }
-
-    .card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px #dce5f2;
     }
 
     .card h3 {
-      color: #5b21b6;
-      margin-bottom: 10px;
+      color: #087bb5;
+      margin-bottom: 12px;
     }
 
-    /* SKILLS */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
+    .card p {
+      color: #46546a;
+      margin-bottom: 12px;
     }
 
-    .skill {
-      background: #ede9fe;
-      color: #5b21b6;
-      padding: 10px 17px;
-      border-radius: 25px;
+    .card a {
+      color: #087bb5;
       font-weight: bold;
+      text-decoration: none;
     }
 
-    /* EDUCATION */
+    .card a:hover {
+      text-decoration: underline;
+    }
+
     .education {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
+      background: #edf4ff;
     }
 
-    /* EXPERIENCE */
-    .experience-card {
-      border-left: 5px solid #7c3aed;
+    .education-item {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid #087bb5;
+      margin-bottom: 16px;
+      border-radius: 8px;
     }
 
-    /* PROJECTS */
-    .project {
-      overflow: hidden;
-    }
-
-    .project img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 18px;
-    }
-
-    .project h3 {
-      font-size: 21px;
-      color: #5b21b6;
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      color: #64748b;
-      min-height: 70px;
-    }
-
-    .project a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #6d28d9;
-      font-weight: bold;
-    }
-
-    /* CONTACT */
     .contact {
       text-align: center;
+      background: #edf4ff;
     }
 
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 25px;
+    .contact p {
+      margin: 12px 0;
     }
 
-    .contact-links a {
-      background: #7c3aed;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-    }
-
-    /* FOOTER */
     footer {
-      text-align: center;
-      background: #10182b;
+      background: #101d38;
       color: white;
-      padding: 30px;
+      text-align: center;
+      padding: 22px;
     }
 
-    /* MOBILE */
-    @media (max-width: 850px) {
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      nav ul {
-        flex-wrap: wrap;
+    @media (max-width: 600px) {
+      header {
         justify-content: center;
-      }
-
-      .hero h1 {
-        font-size: 42px;
-      }
-
-      .about {
-        grid-template-columns: 1fr;
         text-align: center;
       }
 
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
+      nav {
+        justify-content: center;
       }
 
-      .education {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 550px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 34px;
+      .hero {
+        text-align: center;
+        padding: 45px 6%;
       }
 
       .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 230px;
+        height: 230px;
       }
 
       section {
-        padding: 60px 5%;
+        padding: 45px 6%;
       }
     }
   </style>
@@ -341,441 +249,196 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">Gowri Devi</div>
+  <header>
+    <h2>Gowri Devi</h2>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
+  <main>
 
-      <!-- PROFILE IMAGE: corrected code -->
-      <img
-        src="./Gowri%20Devi%E2%80%99s%20Tech%20Portfolio%20Hero.png"
-        alt="Coding and AI Profile"
-        class="profile-img"
-      >
+    <section class="hero" id="home">
 
-      <p>Hello, I'm</p>
+      <div class="hero-content">
+        <p>Hello, welcome to my portfolio!</p>
 
-      <h1>Gowri Devi Attakanthippa</h1>
+        <h1>Hi, I'm Gowri Devi</h1>
 
-      <h2>Python Full Stack Developer</h2>
+        <h2>Python Full Stack Developer</h2>
 
-      <p>
-        Motivated B.Com Computer Applications graduate
-        with hands-on experience in Python, Django,
-        SQL and Web Development through practical
-        projects, capstone projects and internship
-        experience.
-      </p>
+        <p>
+          I am a B.Com Computer Applications graduate with training
+          in Python Full Stack Development. I am interested in
+          building web applications and learning new technologies.
+        </p>
 
-      <a href="#projects" class="btn primary">
-        View My Projects
-      </a>
-
-      <a
-        href="./GOWRI%20DEVI-Python%20Fullstack-Developer.Resume.pdf"
-        class="btn secondary"
-        download
-      >
-        Download Resume
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 class="title">About Me</h2>
-
-    <p class="subtitle">
-      Python Full Stack Developer focused on building
-      practical web applications and software solutions.
-    </p>
-
-    <div class="about">
-      <img src="./about-pic1.jpg" alt="Gowri Devi" class="about-img">
+        <a class="button" href="#projects">View My Projects</a>
+        <a class="button" href="#contact">Contact Me</a>
+      </div>
 
       <div>
-        <p>
-          I am a motivated Full Stack Python Developer
-          with a B.Com Computer Applications background
-          and hands-on experience through multiple
-          practical and capstone projects.
-        </p>
-
-        <br>
-
-        <p>
-          I have worked with Python, Django,
-          SQL/MySQL, HTML, CSS, JavaScript,
-          Bootstrap, Git and GitHub.
-        </p>
-
-        <br>
-
-        <p>
-          I am looking for an entry-level IT opportunity
-          where I can contribute to real-world software
-          development projects and continue improving
-          my technical skills.
-        </p>
-
-        <a href="https://github.com/Gowridevi64"
-           target="_blank" rel="noopener noreferrer"
-           class="btn primary">
-          GitHub Profile
-        </a>
-
-        <a href="https://www.linkedin.com/in/gowri-devi-ba9247428"
-           target="_blank" rel="noopener noreferrer"
-           class="btn secondary"
-           style="color:#6d28d9;border-color:#6d28d9;">
-          LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2 class="title">Technical Skills</h2>
-
-    <p class="subtitle">
-      Technologies and development skills used in my projects.
-    </p>
-
-    <div class="skills">
-      <span class="skill">Python</span>
-      <span class="skill">Django</span>
-      <span class="skill">SQL</span>
-      <span class="skill">MySQL</span>
-      <span class="skill">PostgreSQL</span>
-      <span class="skill">HTML</span>
-      <span class="skill">CSS</span>
-      <span class="skill">JavaScript</span>
-      <span class="skill">Bootstrap</span>
-      <span class="skill">Git</span>
-      <span class="skill">GitHub</span>
-      <span class="skill">OOP</span>
-      <span class="skill">CRUD</span>
-      <span class="skill">NumPy</span>
-      <span class="skill">Pandas</span>
-      <span class="skill">Responsive Web Design</span>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2 class="title">Education</h2>
-
-    <div class="education">
-      <div class="card">
-        <h3>B.Com Computer Applications</h3>
-        <p>Bachelor's Degree</p>
-        <p>Vikrama Simhapuri University</p>
+        <img
+          src="./Gowri%20Devi%E2%80%99s%20Tech%20Portfolio%20Hero.png"
+          alt="Coding and AI Profile"
+          class="profile-img"
+        >
       </div>
 
-      <div class="card">
-        <h3>Career Focus</h3>
+    </section>
+
+    <section id="about">
+      <div class="section-content">
+        <h2>About Me</h2>
+
+        <div class="about-text">
+          <p>
+            I am Gowri Devi from Tirupati, Andhra Pradesh.
+            I have completed B.Com Computer Applications and
+            a Python Full Stack Developer course.
+          </p>
+
+          <p>
+            I have learned Python, HTML, CSS, SQL and web
+            development concepts. I enjoy creating projects
+            and improving my programming skills through practice.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-content">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-list">
+          <span class="skill">Python</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Django</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">Git</span>
+          <span class="skill">VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="section-content">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>B.Com Computer Applications</h3>
+          <p>Vikram Degree College, Sullurupeta</p>
+          <p>2026</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Intermediate</h3>
+          <p>Vikram Junior College, Sullurupeta</p>
+          <p>2023</p>
+        </div>
+
+        <div class="education-item">
+          <h3>SSC</h3>
+          <p>Zilla Parishad High School, Sriharikota</p>
+          <p>2021</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-content">
+        <h2>My Projects</h2>
+
+        <div class="card-grid">
+
+          <div class="card">
+            <h3>Travel Yaari UI</h3>
+            <p>
+              A responsive travel website interface designed
+              to help users explore travel destinations.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
+          </div>
+
+          <div class="card">
+            <h3>Employee Database System</h3>
+            <p>
+              An application concept for managing employee
+              information and performing database operations.
+            </p>
+            <p><strong>Technology:</strong> Python</p>
+          </div>
+
+          <div class="card">
+            <h3>OTP Verification System</h3>
+            <p>
+              A login verification project designed to
+              demonstrate OTP-based authentication.
+            </p>
+            <p><strong>Technology:</strong> Python</p>
+          </div>
+
+          <div class="card">
+            <h3>CRUD Application</h3>
+            <p>
+              An application demonstrating Create, Read,
+              Update and Delete operations.
+            </p>
+            <p><strong>Technology:</strong> Python</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-content">
+        <h2>Contact Me</h2>
+
         <p>
-          Entry-level Software Development,
-          Python Development, Django Development
-          and Web Development.
+          I am interested in Python Developer opportunities
+          and internships.
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:attakanithippa.gowridevi@gmail.com">
+            attakanithippa.gowridevi@gmail.com
+          </a>
+        </p>
+
+        <p>
+          GitHub:
+          <a href="https://github.com/gowridevi64"
+             target="_blank"
+             rel="noopener noreferrer">
+            View My GitHub
+          </a>
+        </p>
+
+        <p>
+          Portfolio:
+          <a href="https://gowridevi64.github.io/Portfolio-Website/">
+            My Portfolio Website
+          </a>
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2 class="title">Internship Experience</h2>
+  </main>
 
-    <p class="subtitle">
-      Practical Python Programming internship experience
-      at Coding Brains Technologies.
-    </p>
-
-    <div class="cards">
-      <div class="card experience-card">
-        <h3>Python Programming Intern</h3>
-        <p><strong>Coding Brains Technologies</strong></p>
-
-        <br>
-
-        <p>
-          Successfully completed internship experience
-          in Python Programming and participated in
-          four capstone projects and tasks.
-        </p>
-
-        <br>
-
-        <p>
-          Gained hands-on experience in Python Programming,
-          teamwork, communication and problem-solving.
-        </p>
-      </div>
-
-      <div class="card experience-card">
-        <h3>Internship Opportunity</h3>
-
-        <p>
-          Selected for an internship opportunity
-          at Coding Brains.
-        </p>
-
-        <br>
-
-        <p>
-          The internship provided hands-on experience,
-          real-world projects, collaboration with
-          developers and practical software-development
-          exposure.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2 class="title">Featured Projects</h2>
-
-    <p class="subtitle">
-      Practical projects demonstrating Python, web development,
-      databases, CRUD operations and user interface design.
-    </p>
-
-    <div class="cards">
-
-      <!-- PROJECT 1 -->
-      <div class="card project">
-        <img src="./quize pic.png" alt="Quiz Application project" loading="lazy">
-        <h3>Quiz Application</h3>
-        <p>
-          Interactive quiz application developed
-          using web development concepts.
-        </p>
-        <a href="https://quiz-companion--Gowridevi.replit.app"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 2 -->
-      <div class="card project">
-        <img src="./travel yaari pic.png" alt="Travel Yaari project" loading="lazy">
-        <h3>Travel Yaari</h3>
-        <p>
-          Responsive travel website with an
-          attractive and user-friendly interface.
-        </p>
-        <a href="https://gowridevi64.github.io/travel-yaari/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 3 -->
-      <div class="card project">
-        <img src="./foodie pic.jpg" alt="Foodie Application project" loading="lazy">
-        <h3>Foodie Application</h3>
-        <p>
-          Food-focused web application designed
-          with a clean and attractive user interface.
-        </p>
-        <a href="https://gowridevi64.github.io/Foodiee/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 4 -->
-      <div class="card project">
-        <img src="./ui login form.png" alt="Login Form project" loading="lazy">
-        <h3>Login Form</h3>
-        <p>
-          Responsive login form project created
-          using front-end web technologies.
-        </p>
-        <a href="https://gowridevi64.github.io/loginform/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 5 -->
-      <div class="card project">
-        <img src="./capstone 1.jpeg" alt="Employee Database Management project" loading="lazy">
-        <h3>Employee Database Management</h3>
-        <p>
-          Database management application for
-          storing and managing employee information.
-        </p>
-        <a href="https://gowridevi1.pythonanywhere.com/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 6 -->
-      <div class="card project">
-        <img src="./capstone pic 2.png" alt="CRUD Project" loading="lazy">
-        <h3>CRUD Project</h3>
-        <p>
-          Full-stack CRUD application demonstrating
-          Create, Read, Update and Delete operations.
-        </p>
-        <a href="https://gowridevi64.pythonanywhere.com/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 7 -->
-      <div class="card project">
-        <img src="./capstone pic 3.jpeg" alt="Todo Application project" loading="lazy">
-        <h3>Todo Application</h3>
-        <p>
-          Task management application developed
-          as a hands-on capstone project.
-        </p>
-        <a href="https://gowridevi67.pythonanywhere.com/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 8 -->
-      <div class="card project">
-        <img src="./capstone pic 4.png" alt="CV Generator project" loading="lazy">
-        <h3>CV Generator</h3>
-        <p>
-          Web application that generates a
-          professional CV from user-provided information.
-        </p>
-        <a href="https://gowridevi66.pythonanywhere.com/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 9 -->
-      <div class="card project">
-        <img src="./capstone 5.png" alt="OTP Login System project" loading="lazy">
-        <h3>OTP Login System</h3>
-        <p>
-          Login system project demonstrating
-          email-based OTP authentication flow.
-        </p>
-        <a href="https://gowridevi65.pythonanywhere.com/"
-           target="_blank" rel="noopener noreferrer">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 10 -->
-      <div class="card project">
-        <h3>Zomato Data Analysis</h3>
-        <p>
-          Data analysis project focused on exploring
-          and analyzing Zomato-related data using
-          data analysis techniques.
-        </p>
-        <a href="https://drive.google.com/file/d/1NKJccvhaklk6CIDjo48l_7ZBylxmdgPm/view?usp=sharing"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Zomato_Data_Analysis.png" alt="Zomato Data Analysis" loading="lazy">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 11 -->
-      <div class="card project">
-        <h3>Netflix Data Analysis</h3>
-        <p>
-          Data analysis project focused on exploring
-          and analyzing Netflix-related datasets.
-        </p>
-        <a href="https://drive.google.com/file/d/1pzzfd2OR79FCCYjySa5vZ2fhPyjoja6N/view?usp=sharing"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Netflix_Data_Analysis.png" alt="Netflix Data Analysis" loading="lazy">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 12 -->
-      <div class="card project">
-        <h3>Automobile Data Analysis</h3>
-        <p>
-          Data analysis project focused on exploring
-          and analyzing automobile-related data.
-        </p>
-        <a href="https://drive.google.com/file/d/1lgLUNxEq9V7WYHg1xZXAowV_ku0Jo-Sn/view?usp=sharing"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Automobile_Data_Analysis.png" alt="Automobile Data Analysis" loading="lazy">
-          Live Demo ↗
-        </a>
-      </div>
-
-      <!-- PROJECT 13 -->
-      <div class="card project">
-        <h3>Weather Data Analysis</h3>
-        <p>
-          Data analysis project focused on exploring
-          and analyzing weather-related data.
-        </p>
-        <a href="https://drive.google.com/file/d/12Szz1zG8oo7Im7SaQl2T8bUTRdQ0Xx8z/view?usp=sharing"
-           target="_blank" rel="noopener noreferrer">
-          <img src="./Weather_Data_Analysis.png" alt="Weather Data Analysis" loading="lazy">
-          Live Demo ↗
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact">
-      <h2 class="title">Let's Connect</h2>
-
-      <p>
-        I am open to entry-level IT opportunities,
-        internships and software development roles.
-      </p>
-
-      <div class="contact-links">
-        <a href="mailto:attakanthippa.gowridevi@gmail.com">
-          Email
-        </a>
-
-        <a href="https://www.linkedin.com/in/gowri-devi-ba9247428"
-           target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
-
-        <a href="https://github.com/Gowridevi64"
-           target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Gowri Devi. All Rights Reserved.</p>
+    <p>© 2026 Gowri Devi | Python Full Stack Developer</p>
   </footer>
 
 </body>
